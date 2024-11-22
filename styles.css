@@ -1,0 +1,159 @@
+:root {
+    --light-coral: #f09594ff;
+    --wine: #6b2737ff;
+    --tomato: #f95738ff;
+    --white-smoke: #f4f5f5ff;
+    --night: #121715ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    color: var(--night);
+}
+
+/* GENERAL ---------------------------------------------------------------------------------------------------------- */
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.bg-wine {
+    color: var(--white-smoke);
+    background-color: var(--wine);
+}
+
+.bg-white {
+    background-color: var(--white-smoke);
+    color: var(--wine);
+}
+
+/* STRUCTURE -------------------------------------------------------------------------------------------------------- */
+
+body {
+    height: 100vh;
+}
+
+header {
+    background-color: var(--light-coral);
+    display: flex;
+    justify-content: center;
+}
+
+.header-inner {
+    padding: 1rem 2rem;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.head-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+#logo-title {
+    font-size: 4rem;
+}
+
+#logo-img {
+    height: 4rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+nav > a {
+    text-decoration: none;
+}
+
+main {
+    flex-direction: column;
+}
+
+/* HERO ------------------------------------------------------------------------------------------------------------- */
+
+.hero {
+    padding: 10rem 2rem;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#hero-tagline {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#hero-description {
+    width: 50%;
+    text-align: center;
+}
+
+.hero-links {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.testimonial {
+    gap: 2rem;
+    flex-direction: column;
+    background-color: var(--wine);
+    width: 100%;
+    padding: 2rem;
+}
+
+#testimonial-title {
+    color: var(--white-smoke);
+    font-size: 2rem;
+}
+
+.testimonial-companies {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.testimonial-companies > p {
+    color: var(--white-smoke);
+}
+
+/* STYLIZED ELEMENTS ------------------------------------------------------------------------------------------------ */
+
+.link-button {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid var(--night);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-button-sm {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--night);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
