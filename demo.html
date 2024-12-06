@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Demo | Unitask</title>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="head-logo">
+            <a href="/">
+                <img id="logo-img" src="logo.svg" alt="logo">
+            </a>
+            <div>
+                <p id="logo-small-title">Example Organization</p>
+                <h1 id="logo-project-title">Demonstration Project</h1>
+            </div>
+        </div>
+        <nav>
+            <a href="/" class="link-button-sm bg-wine">Sign Out</a>
+        </nav>
+    </div>
+</header>
+
+<div class="ticket-screen-layout">
+
+    <main class="tickets">
+        <section class="tickets-head">
+            <h2>Demo Project Queue</h2>
+            <div class="tickets-head-buttons">
+                <button id="newticket">Create New Ticket</button>
+                <button id="searchticket">Search for Ticket</button>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="tickets-section-title">Assigned Tickets</h3>
+            <table class="ticket-table">
+                <tr class="ticket-head">
+                    <th class="tix-title">Title</th>
+                    <th>Assigned User</th>
+                    <th>Due Date</th>
+                    <th>ID</th>
+                </tr>
+                <tr class="ticket-row">
+                    <td class="tix-title"><a href="/demo.html">Example Ticket 1</a></td>
+                    <td>User 1</td>
+                    <td><time datetime="2024-12-01T08:00">12/1/24 08:00</time></td>
+                    <td class="tix-id">00001</td>
+                </tr>
+                <tr class="ticket-row">
+                    <td class="tix-title"><a href="/demo.html">Example Ticket 2</a></td>
+                    <td>User 1</td>
+                    <td><time datetime="2024-12-01T08:00">12/1/24 08:00</time></td>
+                    <td class="tix-id">00002</td>
+                </tr>
+                <tr class="ticket-row">
+                    <td class="tix-title"><a href="/demo.html">Example Ticket 3</a></td>
+                    <td>User 1</td>
+                    <td><time datetime="2024-12-01T08:00">12/1/24 08:00</time></td>
+                    <td class="tix-id">00003</td>
+                </tr>
+                <tr class="ticket-row">
+                    <td class="tix-title"><a href="/demo.html">Example Ticket 4</a></td>
+                    <td>User 1</td>
+                    <td><time datetime="2024-12-01T08:00">12/1/24 08:00</time></td>
+                    <td class="tix-id">00004</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="tickets-section-title">All Tickets</h3>
+            <table class="ticket-table">
+                <tr class="ticket-head">
+                    <th class="tix-title">Title</th>
+                    <th>Assigned User</th>
+                    <th>Due Date</th>
+                    <th>ID</th>
+                </tr>
+                <tr class="ticket-row">
+                    <td class="tix-title"><a href="/demo.html">Example Ticket 1</a></td>
+                    <td>User 1</td>
+                    <td><time datetime="2024-12-01T08:00">12/1/24 08:00</time></td>
+                    <td class="tix-id">00001</td>
+                </tr>
+                <tr class="ticket-row">
+                    <td class="tix-title"><a href="/demo.html">Example Ticket 2</a></td>
+                    <td>User 1</td>
+                    <td><time datetime="2024-12-01T08:00">12/1/24 08:00</time></td>
+                    <td class="tix-id">00002</td>
+                </tr>
+                <tr class="ticket-row">
+                    <td class="tix-title"><a href="/demo.html">Example Ticket 3</a></td>
+                    <td>User 1</td>
+                    <td><time datetime="2024-12-01T08:00">12/1/24 08:00</time></td>
+                    <td class="tix-id">00003</td>
+                </tr>
+                <tr class="ticket-row">
+                    <td class="tix-title"><a href="/demo.html">Example Ticket 4</a></td>
+                    <td>User 1</td>
+                    <td><time datetime="2024-12-01T08:00">12/1/24 08:00</time></td>
+                    <td class="tix-id">00004</td>
+                </tr>
+                <tr class="ticket-row">
+                    <td class="tix-title"><a href="/demo.html">Example Ticket 5</a></td>
+                    <td>User 2</td>
+                    <td><time datetime="2024-12-01T08:00">12/1/24 08:00</time></td>
+                    <td class="tix-id">00005</td>
+                </tr>
+                <tr class="ticket-row">
+                    <td class="tix-title"><a href="/demo.html">Example Ticket 6</a></td>
+                    <td>User 2</td>
+                    <td><time datetime="2024-12-01T08:00">12/1/24 08:00</time></td>
+                    <td class="tix-id">00006</td>
+                </tr>
+                <tr class="ticket-row">
+                    <td class="tix-title"><a href="/demo.html">Example Ticket 7</a></td>
+                    <td>User 3</td>
+                    <td><time datetime="2024-12-01T08:00">12/1/24 08:00</time></td>
+                    <td class="tix-id">00007</td>
+                </tr>
+                <tr class="ticket-row">
+                    <td class="tix-title"><a href="/demo.html">Example Ticket 8</a></td>
+                    <td>User 3</td>
+                    <td><time datetime="2024-12-01T08:00">12/1/24 08:00</time></td>
+                    <td class="tix-id">00008</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <aside class="project-info">
+        <h2 id="projdesc">This is an example project description for a sample Unitask project.</h2>
+        <section>
+            <h3>Deadline</h3>
+            <p><time datetime="2024-12-08T23:59" class="projdesc-time">December 8, 2024 at 11:59PM</time></p>
+        </section>
+        <section>
+            <h3>Assigned Users</h3>
+            <ul>
+                <li>User 1 (user1@unitask.com)</li>
+                <li>User 2 (user2@unitask.com)</li>
+                <li>User 3 (user3@unitask.com)</li>
+            </ul>
+        </section>
+    </aside>
+</div>
+
+</body>
+</html>
