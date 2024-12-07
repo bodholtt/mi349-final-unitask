@@ -55,7 +55,7 @@
 /* STRUCTURE -------------------------------------------------------------------------------------------------------- */
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: var(--white-smoke);
     display: grid;
@@ -167,13 +167,12 @@ ul {
 }
 
 footer {
-    background-color: var(--wine);
+    background-color: var(--night);
     padding: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     align-self: flex-end;
-    margin-top: 5rem;
 }
 footer > div > * {
     color: var(--white-smoke);
@@ -230,7 +229,7 @@ footer > div > * > a {
     font-size: 2rem;
 }
 
-#testimonial-description {
+.testimonial > p {
     color: var(--white-smoke);
     width: 50%;
     text-align: center;
@@ -253,6 +252,11 @@ footer > div > * > a {
 @media screen and (max-width: 900px) {
     .testimonial {
         padding: 2rem 0;
+    }
+
+    .testimonial-companies {
+        max-width: 80%;
+        gap: 2rem;
     }
 }
 
