@@ -1,31 +1,35 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <title>Demo | Unitask</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles.css">
-    <title>Demo | Unitask</title>
+    <script src="nav.js" defer></script>
 </head>
 <body>
 
 <header>
     <div class="header-inner">
         <div class="head-logo">
-            <a href="/">
-                <img id="logo-img" src="logo.svg" alt="logo">
-            </a>
-            <div>
-                <p id="logo-small-title">Example Organization</p>
-                <h1 id="logo-project-title">Demonstration Project</h1>
+            <div class="head-logo-inner">
+                <a href="/">
+                    <img id="logo-img" src="logo.svg" alt="logo">
+                </a>
+                <div>
+                    <p id="logo-small-title">Example Organization</p>
+                    <h1 id="logo-project-title">Demonstration Project</h1>
+                </div>
             </div>
+            <p id="burger" class="hide-desktop">☰</p>
         </div>
-        <nav>
-            <a href="/" class="link-button-sm bg-wine">Sign Out</a>
+        <nav class="hide-mobile">
+            <a href="/">Organization</a>
+            <a href="/">Account</a>
+            <a href="/" class="link-button-sm wine">Sign Out</a>
         </nav>
     </div>
 </header>
@@ -36,8 +40,8 @@
         <section class="tickets-head">
             <h2>Demo Project Queue</h2>
             <div class="tickets-head-buttons">
-                <button id="newticket">Create New Ticket</button>
-                <button id="searchticket">Search for Ticket</button>
+                <button class="link-button coral">Create New Ticket</button>
+                <button class="link-button night">Search for Ticket</button>
             </div>
         </section>
 
@@ -151,6 +155,18 @@
                 <li>User 2 (user2@unitask.com)</li>
                 <li>User 3 (user3@unitask.com)</li>
             </ul>
+        </section>
+        <section class="chat-outer">
+            <h3>Chat</h3>
+            <div id="messages">
+                <p>User 2: Example message</p>
+                <p>User 3: Example message 2</p>
+            </div>
+            <div id="message-send">
+                <label for="message-text">Message:</label>
+                <input id="message-text" type="text">
+                <button class="link-button-sm tomato">Send</button>
+            </div>
         </section>
     </aside>
 </div>
