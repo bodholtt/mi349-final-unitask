@@ -140,6 +140,14 @@ ul {
     margin-left: 1rem;
 }
 
+img {
+    max-width: 100%;
+}
+
+figure {
+    max-width: 50%;
+}
+
 @media screen and (max-width: 900px)
 {
     header {
@@ -164,6 +172,9 @@ ul {
     #logo-project-title {
         font-size: 2rem;
     }
+    figure {
+        max-width: 100%;
+    }
 }
 
 footer {
@@ -181,7 +192,6 @@ footer > div > * > a {
     opacity: 90%;
     color: var(--white-smoke);
 }
-
 /* HERO ------------------------------------------------------------------------------------------------------------- */
 
 .hero {
@@ -247,6 +257,7 @@ footer > div > * > a {
 
 .testimonial-companies > p {
     color: var(--white-smoke);
+    min-width: fit-content;
 }
 
 @media screen and (max-width: 900px) {
@@ -269,6 +280,7 @@ footer > div > * > a {
     justify-content: center;
     align-items: center;
     border: 0;
+    cursor: pointer;
 }
 
 .link-button:hover {
@@ -303,12 +315,18 @@ footer > div > * > a {
     justify-content: center;
     align-items: center;
     border: 0;
+    cursor: pointer;
 }
 
 .link-button-sm.wine {
     color: var(--white-smoke);
     background-color: var(--wine);
 }
+
+.link-button-sm:hover {
+    opacity: 85%;
+}
+
 
 .link-button-sm.tomato {
     color: var(--white-smoke);
